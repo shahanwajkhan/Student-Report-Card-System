@@ -1,0 +1,14 @@
+# Binaries
+*.exe
+*.o
+*.obj
+
+# OS files
+Thumbs.db
+.DS_Store
+
+# IDE files
+.vscode/
+
+# Project specific
+Student-Report-Card-System-main/

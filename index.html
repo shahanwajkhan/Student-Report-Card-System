@@ -1,0 +1,897 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduFlow | Modern Student Management</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Landing Page View -->
+    <section id="landingPage" class="landing-page active">
+        <nav class="landing-nav">
+            <a href="#" class="logo">
+                <div class="logo-icon">EF</div>
+                <span>EduFlow</span>
+            </a>
+            <div class="landing-nav-links">
+                <a href="#hero">Home</a>
+                <a href="#features">Features</a>
+                <a href="#about">About</a>
+                <a href="#workflow">How it Works</a>
+                <a href="#testimonials">Testimonials</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="landing-nav-btns">
+                <button class="btn-outline" onclick="openAuth('login')">Sign In</button>
+                <button class="btn-primary" onclick="openAuth('signup')">Get Started</button>
+            </div>
+        </nav>
+
+        <header id="hero" class="hero-section">
+            <div class="hero-content">
+                <span class="badge">EduFlow v2.0 - Professional Dashboard</span>
+                <h1>Effortless Student <br><span class="gradient-text">Management System</span></h1>
+                <p>Empower your institution with real-time academic tracking, automated report generation, and data-driven insights.</p>
+                <div class="hero-btns">
+                    <button class="btn-primary" onclick="openAuth('signup')">Start Free Trial</button>
+                    <button class="btn-outline" onclick="document.getElementById('features').scrollIntoView({behavior: 'smooth'})">View Demo</button>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="dashboard-container">
+                    <div class="dashboard-mockup">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=1200" alt="Dashboard Mockup">
+                    </div>
+                    <!-- Floating Cards -->
+                    <div class="floating-card stats-card-1">
+                        <div class="f-card-icon blue"><i class="fas fa-users"></i></div>
+                        <div class="f-card-info">
+                            <span>Students Managed</span>
+                            <strong>500+</strong>
+                        </div>
+                    </div>
+                    <div class="floating-card stats-card-2">
+                        <div class="f-card-icon green"><i class="fas fa-chart-line"></i></div>
+                        <div class="f-card-info">
+                            <span>Result Accuracy</span>
+                            <strong>98%</strong>
+                        </div>
+                    </div>
+                    <div class="floating-card stats-card-3">
+                        <div class="f-card-icon orange"><i class="fas fa-chalkboard-teacher"></i></div>
+                        <div class="f-card-info">
+                            <span>Active Teachers</span>
+                            <strong>50+</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section id="features" class="features-section">
+            <div class="section-header">
+                <h2>Everything you need for <span class="gradient-text">Academic Excellence</span></h2>
+                <p>A comprehensive suite of tools designed to simplify school management and empower teachers.</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="f-icon blue"><i class="fas fa-user-graduate"></i></div>
+                    <h3>Student Registry</h3>
+                    <p>Efficiently manage student profiles, personal details, and academic history in one secure location.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="f-icon purple"><i class="fas fa-file-invoice"></i></div>
+                    <h3>Smart Report Cards</h3>
+                    <p>Generate professional, automated report cards with auto-calculations and customized teacher feedback.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="f-icon orange"><i class="fas fa-chart-pie"></i></div>
+                    <h3>Performance Analytics</h3>
+                    <p>Visualize class trends and individual student growth with intuitive charts and performance metrics.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="f-icon green"><i class="fas fa-calendar-check"></i></div>
+                    <h3>Attendance Tracking</h3>
+                    <p>Digital attendance management with real-time status updates and monthly percentage tracking.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="f-icon pink"><i class="fas fa-medal"></i></div>
+                    <h3>Smart Ranking</h3>
+                    <p>Automatically rank students based on their academic performance across all subjects with precision.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="f-icon teal"><i class="fas fa-shield-alt"></i></div>
+                    <h3>Secure Login System</h3>
+                    <p>Robust role-based access control protecting sensitive student data and school records.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section">
+            <div class="about-container">
+                <div class="about-visual">
+                    <img src="https://images.unsplash.com/photo-1551288049-bbbda5366a71?auto=format&fit=crop&q=80&w=1200" alt="Dashboard Full Preview">
+                </div>
+                <div class="about-content">
+                    <h2>Modernizing Education with <span class="gradient-text">Smart Technology</span></h2>
+                    <p>EduFlow is more than just a management tool; it's a partner in academic success. We provide the infrastructure you need to focus on student development rather than paperwork.</p>
+                    <ul class="about-bullets">
+                        <li><i class="fas fa-check-circle"></i> Smart student record organization</li>
+                        <li><i class="fas fa-check-circle"></i> Fast automated result generation</li>
+                        <li><i class="fas fa-check-circle"></i> Teacher-friendly intuitive interface</li>
+                        <li><i class="fas fa-check-circle"></i> Deep performance insights and analytics</li>
+                    </ul>
+                    <div class="about-stats">
+                        <div class="stat-progress">
+                            <div class="stat-label">
+                                <span>Efficiency Boost</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="progress-bg">
+                                <div class="progress-fill" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="stat-progress">
+                            <div class="stat-label">
+                                <span>User Satisfaction</span>
+                                <span>95%</span>
+                            </div>
+                            <div class="progress-bg">
+                                <div class="progress-fill" style="width: 95%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Workflow / How It Works -->
+        <section id="workflow" class="workflow-section">
+            <div class="section-header">
+                <h2>How EduFlow <span class="gradient-text">Works</span></h2>
+                <p>Streamline your academic management in five simple steps.</p>
+            </div>
+            <div class="workflow-grid">
+                <div class="workflow-item">
+                    <div class="step-num">01</div>
+                    <div class="workflow-card">
+                        <i class="fas fa-user-plus"></i>
+                        <h4>Create Account</h4>
+                        <p>Sign up and set up your teacher or admin profile.</p>
+                    </div>
+                </div>
+                <div class="workflow-item">
+                    <div class="step-num">02</div>
+                    <div class="workflow-card">
+                        <i class="fas fa-users-cog"></i>
+                        <h4>Setup Registry</h4>
+                        <p>Import students and define your subject parameters.</p>
+                    </div>
+                </div>
+                <div class="workflow-item">
+                    <div class="step-num">03</div>
+                    <div class="workflow-card">
+                        <i class="fas fa-edit"></i>
+                        <h4>Enter Grades</h4>
+                        <p>Input marks and add personalized teacher notes.</p>
+                    </div>
+                </div>
+                <div class="workflow-item">
+                    <div class="step-num">04</div>
+                    <div class="workflow-card">
+                        <i class="fas fa-magic"></i>
+                        <h4>Auto-Generate</h4>
+                        <p>System calculates totals, grades, and rankings.</p>
+                    </div>
+                </div>
+                <div class="workflow-item">
+                    <div class="step-num">05</div>
+                    <div class="workflow-card">
+                        <i class="fas fa-chart-line"></i>
+                        <h4>Analyze Data</h4>
+                        <p>Review insights and download report cards.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="testimonials-section">
+            <div class="section-header">
+                <h2>Trusted by <span class="gradient-text">Educators</span></h2>
+                <p>Join thousands of teachers and administrators who have transformed their report card process.</p>
+            </div>
+            <div class="testimonials-slider">
+                <div class="testimonial-card">
+                    <div class="t-rating">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p>EduFlow has drastically reduced the time we spend on grading. The automation is incredibly reliable and the interface is a joy to use daily.</p>
+                    <div class="t-author">
+                        <div class="t-avatar">MR</div>
+                        <div class="t-info">
+                            <strong>Maria Rodriguez</strong>
+                            <span>Secondary School Principal</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="t-rating">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p>The analytics features provide insights we never had before. It's much easier to identify students who need extra support early in the term.</p>
+                    <div class="t-author">
+                        <div class="t-avatar">JD</div>
+                        <div class="t-info">
+                            <strong>James Dixon</strong>
+                            <span>Senior Mathematics Head</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="t-rating">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p>A game-changer for our administrative team. The report cards look professional and the parent feedback has been overwhelmingly positive.</p>
+                    <div class="t-author">
+                        <div class="t-avatar">SL</div>
+                        <div class="t-info">
+                            <strong>Sarah Lewis</strong>
+                            <span>Academic Coordinator</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section id="contact" class="cta-section">
+            <div class="cta-card">
+                <h2>Start Managing Student Records <br>the Smart Way</h2>
+                <button class="btn-primary" onclick="openAuth('signup')">Get Started Now <i class="fas fa-arrow-right"></i></button>
+            </div>
+        </section>
+
+        <footer class="landing-footer">
+            <div class="footer-grid">
+                <div class="footer-info">
+                    <a href="#" class="logo">
+                        <div class="logo-icon">EF</div>
+                        <span>EduFlow</span>
+                    </a>
+                    <p>Modernizing academic records for schools worldwide. Our mission is to provide modern tools that empower educators to focus on what matters most: teaching.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Product</h4>
+                    <a href="#features">Features</a>
+                    <a href="#about">Dashboard</a>
+                    <a href="#about">Performance Analytics</a>
+                    <a href="#about">Attendance</a>
+                </div>
+                <div class="footer-links">
+                    <h4>Resources</h4>
+                    <a href="#">Documentation</a>
+                    <a href="#">Help Center</a>
+                    <a href="#">Video Tutorials</a>
+                    <a href="#">Community</a>
+                </div>
+                <div class="footer-links">
+                    <h4>Contact</h4>
+                    <a href="mailto:contact@eduflow.com">Email Us</a>
+                    <a href="#">Support Chat</a>
+                    <a href="#">Sales Inquiry</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 EduFlow System. All Rights Reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <span style="margin: 0 1rem;">|</span>
+                    <a href="#">Terms of Service</a>
+                </div>
+                <p>Developed by SK.</p>
+            </div>
+        </footer>
+    </section>
+
+    <!-- Main App Layout -->
+    <div class="app-container hidden">
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <a href="#" class="logo">
+                    <div class="logo-icon">EF</div>
+                    <span>EduFlow</span>
+                </a>
+            </div>
+            <nav class="nav-menu">
+                <div class="nav-section-label">Main Menu</div>
+                <a href="#" class="nav-item active" data-view="dashboard">
+                    <i class="fas fa-th-large"></i>
+                    <span>Overview</span>
+                </a>
+                <a href="#" class="nav-item admin-only" data-view="students">
+                    <i class="fas fa-user-graduate"></i>
+                    <span>Registry</span>
+                </a>
+                <a href="#" class="nav-item admin-only" data-view="entry">
+                    <i class="fas fa-pen-nib"></i>
+                    <span>Marks Entry</span>
+                </a>
+                <a href="#" class="nav-item admin-only" data-view="analysis">
+                    <i class="fas fa-chart-pie"></i>
+                    <span>Analysis</span>
+                </a>
+                <a href="#" class="nav-item admin-only" data-view="attendance">
+                    <i class="fas fa-calendar-check"></i>
+                    <span>Attendance</span>
+                </a>
+                <a href="#" class="nav-item admin-only" data-view="assignments">
+                    <i class="fas fa-tasks"></i>
+                    <span>Assignments</span>
+                </a>
+
+                
+                <div class="nav-divider"></div>
+                <div class="nav-section-label admin-only">Advanced</div>
+                <a href="#" class="nav-item admin-only" data-view="logs">
+                    <i class="fas fa-history"></i>
+                    <span>System Logs</span>
+                </a>
+
+                <div class="nav-divider"></div>
+                <div class="nav-section-label">Utilities</div>
+                <div class="sidebar-utilities admin-only">
+                    <button id="exportData" class="util-btn" title="Export Data">
+                        <i class="fas fa-download"></i> <span>Export</span>
+                    </button>
+                    <label for="importFile" class="util-btn" title="Import JSON">
+                        <i class="fas fa-upload"></i> <span>Import</span>
+                    </label>
+                    <input type="file" id="importFile" hidden>
+                </div>
+            </nav>
+            <div class="sidebar-footer">
+                <div class="user-profile-card">
+                    <div class="profile-avatar-circle" id="sideUserAvatar">A</div>
+                    <div class="profile-details">
+                        <span id="sideUserName" class="profile-name">Admin</span>
+                        <div style="display:flex; align-items:center; gap:0.5rem">
+                            <span id="sideUserRole" class="profile-role">Administrator</span>
+                            <span id="sideSubjectBadge" class="badge-pill" style="padding:0.1rem 0.5rem; font-size:0.7rem; background:var(--primary-light); color:var(--primary); display:none"></span>
+                        </div>
+                    </div>
+                </div>
+                <button id="logoutBtn" class="logout-btn">
+                    <i class="fas fa-sign-out-alt"></i> <span>Sign Out</span>
+                </button>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <header class="top-bar">
+                <div class="top-bar-left">
+                    <button id="sidebarToggle" class="icon-btn mobile-only" title="Toggle Sidebar">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <div class="breadcrumb" id="topBreadcrumb">
+                        <span class="root">Dashboard</span>
+                        <i class="fas fa-chevron-right separator"></i>
+                        <span class="current" id="breadcrumbCurrent">Overview</span>
+                    </div>
+                </div>
+                <div class="top-bar-right">
+                    <div class="top-bar-actions">
+                        <div class="notification-wrapper">
+                            <button class="icon-btn" title="Notifications" id="notifTrigger">
+                                <i class="fas fa-bell"></i>
+                                <span class="notification-dot" id="notifBadge"></span>
+                            </button>
+                            <div class="dropdown-menu notif-dropdown" id="notifDropdown">
+                                <div class="dropdown-header">
+                                    <strong>Notifications</strong>
+                                    <span>You have pending tasks</span>
+                                </div>
+                                <div class="dropdown-divider"></div>
+                                <div id="notifList" class="notif-list">
+                                    <!-- Dynamic Notifs -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="profile-dropdown">
+                            <img src="https://ui-avatars.com/api/?name=Admin&background=7c5cff&color=fff" alt="Profile" class="dropdown-trigger" id="profileTrigger">
+                            <div class="dropdown-menu" id="profileDropdown">
+                                <div class="dropdown-header">
+                                    <strong id="dropdownName">Admin</strong>
+                                    <span id="dropdownRole">Administrator</span>
+                                </div>
+                                <div class="dropdown-divider"></div>
+                                <a href="#" class="dropdown-item" onclick="switchView('dashboard')">
+                                    <i class="fas fa-th-large"></i> Dashboard
+                                </a>
+                                <a href="#" class="dropdown-item" onclick="switchView('students')">
+                                    <i class="fas fa-user-graduate"></i> My Profile
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a href="#" class="dropdown-item logout-link" id="dropdownLogout">
+                                    <i class="fas fa-sign-out-alt"></i> Sign Out
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <div class="view-container">
+                <!-- Dashboard View -->
+                <section id="dashboardView" class="view active">
+                    <div class="welcome-banner-refined">
+                        <div class="banner-content">
+                            <h1>Hi, <span id="welcomeName">Administrator</span>!</h1>
+                            <p>Here's what's happening in your academy today.</p>
+                        </div>
+                        <div class="banner-illustration">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                    </div>
+
+                    <div class="dashboard-stats-grid">
+                        <div class="modern-stat-card">
+                            <div class="stat-icon-box blue">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <div class="stat-content">
+                                <span class="stat-label">Total Students</span>
+                                <h2 class="stat-value" id="countTotal">0</h2>
+                                <p class="stat-desc">Active enrollments</p>
+                            </div>
+                        </div>
+                        <div class="modern-stat-card">
+                            <div class="stat-icon-box green">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <div class="stat-content">
+                                <span class="stat-label">Pass Rate</span>
+                                <h2 class="stat-value" id="countPass">0%</h2>
+                                <p class="stat-desc">Based on recent results</p>
+                            </div>
+                        </div>
+                        <div class="modern-stat-card">
+                            <div class="stat-icon-box orange">
+                                <i class="fas fa-award"></i>
+                            </div>
+                            <div class="stat-content">
+                                <span class="stat-label">Class Topper</span>
+                                <h2 class="stat-value" id="topperName" style="font-size: 1.25rem;">No Data</h2>
+                                <p class="stat-desc">Highest academic score</p>
+                            </div>
+                        </div>
+                        <div class="modern-stat-card">
+                            <div class="stat-icon-box purple">
+                                <i class="fas fa-calendar-alt"></i>
+                            </div>
+                            <div class="stat-content">
+                                <span class="stat-label">Current Term</span>
+                                <h2 class="stat-value">2026-F</h2>
+                                <p class="stat-desc">Academic Year 2026</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="dashboard-main-grid">
+                        <div class="modern-card quick-actions-container">
+                            <div class="card-header">
+                                <h3>Quick Actions</h3>
+                            </div>
+                            <div class="action-cards-grid">
+                                <div class="action-card" onclick="openModal()">
+                                    <div class="action-icon"><i class="fas fa-user-plus"></i></div>
+                                    <span>Add Student</span>
+                                </div>
+                                <div class="action-card" onclick="switchView('students')">
+                                    <div class="action-icon"><i class="fas fa-address-book"></i></div>
+                                    <span>Registry</span>
+                                </div>
+                                <div class="action-card" onclick="switchView('entry')">
+                                    <div class="action-icon"><i class="fas fa-file-signature"></i></div>
+                                    <span>Enter Marks</span>
+                                </div>
+                                <div class="action-card" onclick="switchView('analysis')">
+                                    <div class="action-icon"><i class="fas fa-chart-bar"></i></div>
+                                    <span>Analysis</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="modern-card">
+                            <div class="card-header">
+                                <h3>Recent Student Records</h3>
+                                <button class="btn-link" onclick="switchView('students')">View All</button>
+                            </div>
+                            <div class="recent-records-table table-responsive">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Student</th>
+                                            <th>Roll No</th>
+                                            <th>Class</th>
+                                            <th>Updates</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="recentStudents">
+                                        <!-- Dynamic rows -->
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Students View -->
+                <section id="studentsView" class="view">
+                    <div class="modern-card">
+                        <div class="card-header">
+                            <h3>Student Registry</h3>
+                            <button class="btn-link" onclick="openModal()">+ Add New Student</button>
+                        </div>
+                        <div class="recent-records-table">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Roll</th>
+                                        <th>Full Name</th>
+                                        <th>Class</th>
+                                        <th>Score %</th>
+                                        <th>Grade</th>
+                                        <th style="text-align: right;">Actions</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="studentTableBody">
+                                    <!-- Dynamic content -->
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Marks Entry View -->
+                <section id="entryView" class="view">
+                    <div id="standardEntryMode" class="dashboard-main-grid">
+                        <div class="modern-card">
+                            <div class="card-header">
+                                <h3>Select Student</h3>
+                            </div>
+                            <div class="student-selection-panel" style="padding: 1.5rem;">
+                                <div class="form-group">
+                                    <label>Choose Student</label>
+                                    <select id="studentSelect">
+                                        <option value="">Search student registry...</option>
+                                    </select>
+                                </div>
+                                <div id="selectedStudentInfo" style="margin-top: 1.5rem;">
+                                    <!-- Mini profile -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modern-card">
+                            <div class="card-header">
+                                <h3>Update Academic Marks</h3>
+                            </div>
+                            <form id="marksForm" style="padding: 1.5rem;">
+                                <div style="display:grid; grid-template-columns: repeat(3, 1fr); gap:1.25rem">
+                                    <div class="form-group"><label>Mathematics</label><input type="number" id="mathMarks" min="0" max="100" placeholder="0-100"></div>
+                                    <div class="form-group"><label>Science</label><input type="number" id="scienceMarks" min="0" max="100" placeholder="0-100"></div>
+                                    <div class="form-group"><label>English</label><input type="number" id="englishMarks" min="0" max="100" placeholder="0-100"></div>
+                                    <div class="form-group"><label>History</label><input type="number" id="historyMarks" min="0" max="100" placeholder="0-100"></div>
+                                    <div class="form-group"><label>Computer</label><input type="number" id="computerMarks" min="0" max="100" placeholder="0-100"></div>
+                                </div>
+                                <div class="form-group" style="margin-top:1.5rem">
+                                    <label>Teacher Comments / Suggestions</label>
+                                    <textarea id="teacherNotes" rows="4" placeholder="e.g. Needs focus on Algebra..."></textarea>
+                                </div>
+                                <button type="submit" class="btn-full-width" style="margin-top:2rem">
+                                    Commit Changes <i class="fas fa-check-circle"></i>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+
+                    <!-- Bulk Entry Mode -->
+                    <div id="bulkEntryMode" class="hidden">
+                        <div class="card">
+                            <div class="card-header">
+                                <div style="display:flex; justify-content:space-between; width:100%; align-items:center">
+                                    <div>
+                                        <h3 style="margin:0">Class Bulk Entry</h3>
+                                        <p style="margin:0; font-size:0.8rem; color:#64748b">Enter marks for all students in a single grid</p>
+                                    </div>
+                                    <div style="display:flex; gap:1rem">
+                                        <select id="bulkSubjectSelect" class="form-control" style="width:180px">
+                                            <option value="Mathematics">Mathematics</option>
+                                            <option value="Science">Science</option>
+                                            <option value="English">English</option>
+                                            <option value="History">History</option>
+                                            <option value="Computer">Computer</option>
+                                        </select>
+                                        <button class="btn-primary" onclick="saveBulkMarks()">Save All Records</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="table-responsive">
+                                    <table class="data-table">
+                                        <thead>
+                                            <tr>
+                                                <th>Roll</th>
+                                                <th>Student Name</th>
+                                                <th>Obtained Marks (Max 100)</th>
+                                                <th>Status</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="bulkTableBody">
+                                            <!-- Dynamic Bulk Rows -->
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Analysis View -->
+                <section id="analysisView" class="view">
+                    <div class="dashboard-main-grid">
+                        <div class="modern-card">
+                            <div class="card-header">
+                                <h3>Subject Analysis</h3>
+                                <p>Overall performance distribution across subjects</p>
+                            </div>
+                            <div id="subjectPerformanceList" style="padding: 1.5rem;">
+                                <!-- Bars -->
+                            </div>
+                        </div>
+                        <div class="modern-card">
+                            <div class="card-header">
+                                <h3>Class Overview</h3>
+                            </div>
+                            <div style="padding: 1.5rem;">
+                                <div id="classMetricsGrid" style="display:grid; grid-template-columns:1fr 1fr; gap:1.25rem; margin-bottom:2rem">
+                                    <div class="stat-mini"><span>Class Average</span> <strong id="classAvg">0%</strong></div>
+                                    <div class="stat-mini"><span>Pass Rate</span> <strong id="classPass">0%</strong></div>
+                                    <div class="stat-mini"><span>Highest Score</span> <strong id="classHigh">0%</strong></div>
+                                    <div class="stat-mini"><span>Lowest Score</span> <strong id="classLow">0%</strong></div>
+                                </div>
+                                <div id="gradeStats" style="display:flex; flex-wrap:wrap; gap:0.75rem; border-top: 1px solid #f1f5f9; padding-top: 1.5rem">
+                                    <!-- Pills -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modern-card" style="margin-top:2rem">
+                        <div class="card-header">
+                            <h3>Academic Rank List</h3>
+                        </div>
+                        <div class="recent-records-table">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Rank</th>
+                                        <th>Student Name</th>
+                                        <th>Total Marks</th>
+                                        <th>Percentage</th>
+                                        <th>Grade</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="rankTableBody">
+                                    <!-- Ranked -->
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Attendance View -->
+                <section id="attendanceView" class="view">
+                    <div class="modern-card">
+                        <div class="card-header">
+                            <div>
+                                <h3>Attendance Registry</h3>
+                                <p>Take and manage daily student attendance.</p>
+                            </div>
+                            <div style="background: #f1f5f9; padding: 0.5rem 1rem; border-radius: 8px; font-weight: 700; color: #475569; font-size: 0.85rem">
+                                <i class="far fa-calendar-alt" style="margin-right: 0.5rem"></i>
+                                <span id="attendanceDate">March 11, 2026</span>
+                            </div>
+                        </div>
+                        <div class="recent-records-table">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th># Roll</th>
+                                        <th>Student Name</th>
+                                        <th>Mark Status</u></th>
+                                        <th>Monthly %</th>
+                                        <th>Status Badge</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="attendanceTableBody">
+                                    <!-- Dynamic -->
+                                </tbody>
+                            </table>
+                        </div>
+                        <div style="padding:1.5rem; text-align:right; border-top: 1px solid #f1f5f9">
+                            <button class="btn-primary" id="saveAttendance" style="padding: 0.75rem 2rem; border-radius: 10px;">
+                                Save Daily Attendance <i class="fas fa-save" style="margin-left: 0.5rem"></i>
+                            </button>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+        </main>
+    </div>
+
+    <!-- Modals -->
+    <div id="studentModal" class="modal">
+        <div class="modal-content student-modal-content">
+            <button class="btn-close-modal" onclick="closeModal()"><i class="fas fa-times"></i></button>
+            <div class="modal-header">
+                <h3 id="modalTitle">Add Student Record</h3>
+                <p>Register a new student into the terminal system.</p>
+            </div>
+            <form id="studentForm" class="modal-body">
+                <input type="hidden" id="studentId">
+                <div class="form-grid">
+                    <div class="form-group full-width">
+                        <label>Full Name</label>
+                        <input type="text" id="studentName" required placeholder="e.g. John Doe">
+                    </div>
+                    <div class="form-group">
+                        <label>Roll Number</label>
+                        <input type="number" id="rollNumber" required placeholder="e.g. 101">
+                    </div>
+                    <div class="form-group">
+                        <label>Class/Section</label>
+                        <input type="text" id="classSection" required placeholder="e.g. 10-A">
+                    </div>
+                </div>
+                <button type="submit" class="btn-primary btn-full-width">Save Student <i class="fas fa-arrow-right"></i></button>
+            </form>
+        </div>
+    </div>
+
+    <div id="reportCardModal" class="modal">
+        <div class="modal-content" style="max-width:850px">
+            <div id="reportCardContent">
+                <!-- Paper View -->
+            </div>
+            <div class="modal-footer no-print">
+                <button class="btn-outline" onclick="closeReport()">Cancel</button>
+                <button class="btn-primary" onclick="window.print()">
+                    <i class="fas fa-file-pdf"></i> Export PDF / Print
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Auth Guard / Split Screen Authentication -->
+    <div id="authGate" class="auth-overlay">
+        <div class="auth-split-container">
+            <!-- Left Side: Visual Area -->
+            <div class="auth-visual">
+                <div class="auth-visual-content">
+                    <div class="floating-icons">
+                        <i class="fas fa-book icon-1"></i>
+                        <i class="fas fa-graduation-cap icon-2"></i>
+                        <i class="fas fa-chart-pie icon-3"></i>
+                        <i class="fas fa-pencil-alt icon-4"></i>
+                    </div>
+                    <div class="illustration-container">
+                        <!-- Modern Education Illustration / Icon -->
+                        <div class="edu-illustration">
+                            <i class="fas fa-chalkboard-teacher"></i>
+                        </div>
+                    </div>
+                    <h1>
+                        Smart Student<br>
+                        <span>Management</span><br>
+                        for Modern Educators
+                    </h1>
+                    <p>Streamline your institution's workflow with precision and ease.</p>
+                </div>
+            </div>
+            <!-- Right Side: Form Container -->
+            <div class="auth-form-container">
+                <div class="auth-card">
+                    <div class="auth-header">
+                        <div class="header-top">
+                            <a href="#" class="logo" onclick="document.getElementById('authGate').classList.remove('active')">
+                                <div class="logo-icon">EF</div>
+                                <span>EduFlow</span>
+                            </a>
+                            <button class="btn-close-auth" onclick="document.getElementById('authGate').classList.remove('active')">
+                                <i class="fas fa-times"></i>
+                            </button>
+                        </div>
+                        <h1 id="authTitle">Welcome Back</h1>
+                        <p id="authSubtitle">Please enter your credentials.</p>
+                    </div>
+                    
+                    <form id="loginForm" class="auth-form">
+                        <div class="form-group">
+                            <label>Username / ID</label>
+                            <div class="input-wrapper">
+                                <i class="fas fa-user-circle"></i>
+                                <input type="text" id="loginUsername" required placeholder="Enter your ID">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Password</label>
+                            <div class="input-wrapper password-input-wrapper">
+                                <i class="fas fa-lock"></i>
+                                <input type="password" id="loginPassword" required placeholder="••••••••">
+                                <i class="fas fa-eye toggle-password" onclick="togglePassword('loginPassword')"></i>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn-primary">Login to Dashboard</button>
+                        <div class="auth-divider">
+                            <span>OR</span>
+                        </div>
+                        <div class="auth-toggle">
+                            Need an account? <span id="toSignup">Create one</span>
+                        </div>
+                    </form>
+
+                    <form id="signupForm" class="auth-form hidden">
+                        <div class="form-group">
+                            <label>Full Name</label>
+                            <div class="input-wrapper">
+                                <i class="fas fa-user"></i>
+                                <input type="text" id="signupUsername" required placeholder="Enter your name">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Email Address</label>
+                            <div class="input-wrapper">
+                                <i class="fas fa-envelope"></i>
+                                <input type="email" id="signupEmail" required placeholder="email@example.com">
+                            </div>
+                        </div>
+                        <!-- Hidden Role as only Admin is left -->
+                        <input type="hidden" id="signupRole" value="Admin">
+                        <div class="form-group">
+                            <label>Password</label>
+                            <div class="input-wrapper password-input-wrapper">
+                                <i class="fas fa-lock"></i>
+                                <input type="password" id="signupPassword" required placeholder="Min. 8 characters">
+                                <i class="fas fa-eye toggle-password" onclick="togglePassword('signupPassword')"></i>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn-primary">Create Account</button>
+                        <div class="auth-divider">
+                            <span>OR</span>
+                        </div>
+                        <div class="auth-toggle">
+                            Already registered? <span id="toLogin">Sign In</span>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -32,6 +32,9 @@
                 <button class="btn-outline" onclick="openAuth('login')">Sign In</button>
                 <button class="btn-primary" onclick="openAuth('signup')">Get Started</button>
             </div>
+            <button id="mobileMenuToggle" class="mobile-menu-toggle mobile-only">
+                <i class="fas fa-bars"></i>
+            </button>
         </nav>
 
         <header id="hero" class="hero-section">
@@ -306,6 +309,22 @@
             </div>
         </footer>
     </section>
+
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobileNav" class="mobile-nav-container">
+        <div class="mobile-nav-links">
+            <a href="#hero" onclick="toggleMobileMenu()">Home</a>
+            <a href="#features" onclick="toggleMobileMenu()">Features</a>
+            <a href="#about" onclick="toggleMobileMenu()">About</a>
+            <a href="#workflow" onclick="toggleMobileMenu()">How it Works</a>
+            <a href="#testimonials" onclick="toggleMobileMenu()">Testimonials</a>
+            <a href="#contact" onclick="toggleMobileMenu()">Contact</a>
+        </div>
+        <div class="nav-btns">
+            <button class="btn-outline" onclick="openAuth('login'); toggleMobileMenu()">Sign In</button>
+            <button class="btn-primary" onclick="openAuth('signup'); toggleMobileMenu()">Get Started</button>
+        </div>
+    </div>
 
     <!-- Main App Layout -->
     <div class="app-container hidden">

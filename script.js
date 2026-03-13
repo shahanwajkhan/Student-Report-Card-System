@@ -36,9 +36,46 @@ document.addEventListener('DOMContentLoaded', () => {
     initApp();
     initLandingAnimations();
     initNavbarScroll();
+    initMobileMenu();
     renderLogs();
     renderAttendanceView();
 });
+
+// --- Mobile Menu Management ---
+function initMobileMenu() {
+    const toggle = document.getElementById('mobileMenuToggle');
+    const mobileNav = document.getElementById('mobileNav');
+    
+    if (toggle && mobileNav) {
+        toggle.onclick = (e) => {
+            e.stopPropagation();
+            mobileNav.classList.toggle('active');
+            const icon = toggle.querySelector('i');
+            if (mobileNav.classList.contains('active')) {
+                icon.classList.replace('fa-bars', 'fa-times');
+            } else {
+                icon.classList.replace('fa-times', 'fa-bars');
+            }
+        };
+
+        // Close menu on click outside
+        document.addEventListener('click', (e) => {
+            if (mobileNav.classList.contains('active') && !mobileNav.contains(e.target) && e.target !== toggle) {
+                mobileNav.classList.remove('active');
+                toggle.querySelector('i').classList.replace('fa-times', 'fa-bars');
+            }
+        });
+    }
+}
+
+window.toggleMobileMenu = () => {
+    const mobileNav = document.getElementById('mobileNav');
+    const toggle = document.getElementById('mobileMenuToggle');
+    if (mobileNav && toggle) {
+        mobileNav.classList.remove('active');
+        toggle.querySelector('i').classList.replace('fa-times', 'fa-bars');
+    }
+};
 
 // --- UI Enhancements ---
 function initNavbarScroll() {
